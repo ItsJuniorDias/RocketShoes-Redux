@@ -27,7 +27,8 @@ module.exports = {
         extensions: ['.jsx', '.js'],
       },
     ],
-
+    "ecmaFeatures": { "destructuring": true },
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used" }]
 
   },
 };
