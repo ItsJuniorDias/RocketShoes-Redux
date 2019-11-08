@@ -28,6 +28,6 @@ export default createGlobalStyle`
   }
 
   button {
-    cursor; pointer;
+    cursor: pointer;
   }
 `;
