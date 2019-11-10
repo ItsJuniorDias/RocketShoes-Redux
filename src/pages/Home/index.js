@@ -23,14 +23,14 @@ import { ProductList } from './styles';
      this.setState({ products: data });
     }
 
-    handleAddProduct = product => {
-      const { dispatch } = this.props;
+   handleAddProduct = product => {
+     const { dispatch } = this.props;
 
-      dispatch({
+     dispatch({
         type: 'ADD_TO_CART',
         product,
-      });
-    };
+     });
+   };
 
 
   render() {

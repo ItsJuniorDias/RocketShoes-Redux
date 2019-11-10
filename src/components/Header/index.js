@@ -19,7 +19,7 @@ import { Container, Cart, Logo } from './styles';
      <Cart to="/cart">
        <div>
          <strong>Meu Carrinho</strong>
-         <span>{cartSize} Itens</span>
+         <span> {cartSize} Itens</span>
          </div>
          <MdShoppingBasket size={36} color="#fff" />
        </Cart>
@@ -28,5 +28,5 @@ import { Container, Cart, Logo } from './styles';
 }
 
 export default connect(state => ({
-  cartSize: state.cart.length,
+  cartSize: state.cart.length ,
 }))(Header);

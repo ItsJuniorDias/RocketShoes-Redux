@@ -28,7 +28,9 @@ module.exports = {
       },
     ],
     "ecmaFeatures": { "destructuring": true },
-    "no-unused-vars": ["error", { "vars": "all", "args": "after-used" }]
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used" }],
+    'import/prefer-default-export' : 'off"',
+    'no-console' : ["error", {allow: ["tron"]}]
 
   },
 };
