@@ -3,8 +3,12 @@ import {MdAddShoppingCart} from 'react-icons/md';
 import api from '../../services/api';
 import { formatPrice}  from '../../util/format';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 import { ProductList } from './styles';
+
+import * as CartActions from '../../store/modules/cart/actions';
+
 
  class Home extends Component {
   //Estado para armazenamento de produtos
@@ -24,12 +28,9 @@ import { ProductList } from './styles';
     }
 
    handleAddProduct = product => {
-     const { dispatch } = this.props; //desestruturação da props
+     const { addToCart } = this.props; //desestruturação da props
 
-     dispatch({ //serve para dispararmos nossas Actions
-        type: 'ADD_TO_CART', // required
-        product,
-     });
+    addToCart(product);
    };
 
 
@@ -58,4 +59,7 @@ import { ProductList } from './styles';
     )};
 }
 
-export default connect()(Home);
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(CartActions, dispatch);
+
+export default connect(null, mapDispatchToProps)(Home);
