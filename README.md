@@ -1,4 +1,4 @@
-# Redux 
+# Redux 💠
 ![img](https://user-images.githubusercontent.com/50254416/68608133-f0cd2780-0490-11ea-8304-6907c91e07aa.png)
  - Development of an application using the stack  *ReactJS*.
  
