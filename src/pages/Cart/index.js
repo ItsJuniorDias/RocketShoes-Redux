@@ -29,11 +29,11 @@ export default function Cart() {
               <td>
                 <div>
                 <button type="button">
-                <MdRemoveCircleOutline size={20} color="#7159c1"/>
+                <MdRemoveCircleOutline size={20} color="#404040"/>
                 </button>
                 <input type="number" readOnly value={1} />
                 <button type="button">
-                <MdAddCircleOutline size={20} color="#7159c1"/>
+                <MdAddCircleOutline size={20} color="#404040"/>
                 </button>
                 </div>
               </td>
@@ -42,7 +42,7 @@ export default function Cart() {
               </td>
               <td>
                 <button type="button">
-                  <MdDelete size={20} color="#7159c1" />
+                  <MdDelete size={20} color="#404040" />
                 </button>
               </td>
             </tr>

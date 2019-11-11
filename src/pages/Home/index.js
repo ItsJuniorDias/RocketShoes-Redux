@@ -24,10 +24,10 @@ import { ProductList } from './styles';
     }
 
    handleAddProduct = product => {
-     const { dispatch } = this.props;
+     const { dispatch } = this.props; //desestruturação da props
 
-     dispatch({
-        type: 'ADD_TO_CART',
+     dispatch({ //serve para dispararmos nossas Actions
+        type: 'ADD_TO_CART', // required
         product,
      });
    };

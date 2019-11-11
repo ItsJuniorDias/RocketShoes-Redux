@@ -6,7 +6,7 @@ import {MdShoppingBasket} from 'react-icons/md';
 
 import { Container, Cart, Logo } from './styles';
 
- import logo from '../../assets/images/logo.svg';
+ import logo from '../../assets/images/logo.png';
 
  function Header({ cartSize }) {
   return (

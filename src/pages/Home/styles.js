@@ -34,7 +34,7 @@ export const ProductList = styled.ul`
    }
 
  button {
-   background: #7159c1;
+   background-image: linear-gradient(116deg, #f7f7f7, #aaaaaa 50%, #404040);
    color: #fff;
    border: 0;
    border-radius: 4px;
@@ -45,7 +45,7 @@ export const ProductList = styled.ul`
    align-items: center;
 
    &:hover {
-     background: ${darken(0.03, '#7159c1')};
+     background: ${darken(0.03, '#aaa')};
    }
 
    div {
