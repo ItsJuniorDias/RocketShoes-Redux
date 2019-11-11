@@ -2,7 +2,7 @@ import produce from 'immer';
 
 export default function cart(state = [], action) { //inicia o state de cart com um [] vazio
   switch (action.type) { //quer ouvir somente o reducer do cart
-    case '@cart/ADD':
+    case '@cart/ADD_SUCCESS':
       return produce(state, draft => {
          const productIndex = draft.findIndex(p => p.id === action.product.id);
 

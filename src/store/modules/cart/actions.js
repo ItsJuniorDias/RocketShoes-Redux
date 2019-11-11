@@ -1,6 +1,13 @@
-  export function addToCart(product) {
+  export function addToCartRequest(id) {
     return { //serve para dispararmos nossas Actions
-      type: '@cart/ADD', // required
+      type: '@cart/ADD_REQUEST', // required
+      id,
+    };
+  }
+
+  export function addToCartSuccess(product) {
+    return { //serve para dispararmos nossas Actions
+      type: '@cart/ADD_SUCCESS', // required
       product,
     };
   }

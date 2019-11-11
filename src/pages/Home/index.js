@@ -27,10 +27,10 @@ import * as CartActions from '../../store/modules/cart/actions';
      this.setState({ products: data });
     }
 
-   handleAddProduct = product => {
-     const { addToCart } = this.props; //desestruturação da props
+   handleAddProduct = id => {
+     const { addToCartRequest } = this.props; //desestruturação da props
 
-    addToCart(product);
+    addToCartRequest(id);
    };
 
 
@@ -46,7 +46,7 @@ import * as CartActions from '../../store/modules/cart/actions';
         alt={product.title} />
         <strong>{product.title}</strong>
         <span>{product.priceFormatted}</span>
-        <button  type="button" onClick={() => this.handleAddProduct(product)}>
+        <button  type="button" onClick={() => this.handleAddProduct(product.id)}>
           <div>
            <MdAddShoppingCart size={16} color="#fff" /> {amount[product.id] || 0}
            </div>
